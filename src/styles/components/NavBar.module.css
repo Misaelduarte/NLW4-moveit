@@ -1,0 +1,70 @@
+.NavBarContainer {
+  width: 7rem;
+  height: 100vh;
+  margin-left: 1rem;
+  background: var(--white);
+  position: relative;
+  float: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.NavBarContainer .NavBarAlignItems .NavBarLogo {
+  padding-top: 15px;
+
+  cursor: pointer;
+}
+
+.NavBarContainer .NavBarAlignItems .NavBarItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavBarContainer .NavBarAlignItems .NavBarItems ul {
+  list-style: none;
+}
+
+.NavBarContainer .NavBarAlignItems .NavBarItems ul li {
+  width: 7rem;
+  cursor: pointer;
+  padding: 1rem 0;
+  opacity: .5;
+
+  transition: all ease .2s;
+}
+
+
+.ActiveNavBarItem {
+  border-left: 4px solid var(--blue);
+  opacity: 1 !important;
+  transition: all ease .2s;
+}
+
+.NavBarContainer .NavBarAlignItems .NavBarItems ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.NavBarContainer .NavBarAlignItems .NavBarItems ul li a img{
+  transform: translate(0, 10%);
+ }
+
+.NavBarContainer .NavBarAlignItems {
+  height: 100vh;
+  max-height: 380px;
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
